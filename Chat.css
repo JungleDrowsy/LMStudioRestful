@@ -1,0 +1,45 @@
+/* Chat bubble base */
+.chat-bubble {
+  padding: 12px 16px;
+  border-radius: 14px;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #111 !important; /* Force near-black in light mode */
+}
+
+/* User bubble in light mode */
+.user-bubble {
+  background: #dddddd !important; /* Solid gray */
+  align-self: flex-end;
+  text-align: right;
+  border-top-right-radius: 0;
+  color: #111 !important; /* near-black */
+}
+
+/* Assistant bubble in light mode */
+.assistant-bubble {
+  background: #eeeeee !important; /* Light gray */
+  align-self: flex-start;
+  text-align: left;
+  border-top-left-radius: 0;
+  color: #111 !important;
+}
+
+/* Dark mode overrides for chat bubbles */
+body.dark-mode .chat-bubble {
+  color: #fff !important; /* White text on dark backgrounds */
+}
+
+body.dark-mode .user-bubble {
+  background: #555 !important; 
+  color: #fff !important;
+}
+
+body.dark-mode .assistant-bubble {
+  background: #444 !important;
+  color: #fff !important;
+}
